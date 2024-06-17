@@ -5,8 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Eldhose Salby</span></h1>
+            </div>
+        </div>
+<!-- /* ---------------about-------------- */ -->
+</div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Picture 2.png" alt="graduation">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Motivated and detail-oriented professional with a passion for technology and a keen eye for detail, 
+                        seeking a position in the Web designer field. Eager to join a forward-thinking organization 
+                        where I can apply my skills and dedication to contribute to team success and achieve company objectives. 
+                        Committed to continuous learning and staying abreast of emerging technologies to deliver cutting-edge 
+                        solutions and elevate team performance.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span> Proficient in C++, Python, R, SQL, PostgreSQL, PHP,
+                                HTML, CSS, JavaScript, jQuery, Bootstrap, Node.js, and React.js.</li>
+                            <li><span>Cybersecurity:</span> Familiar with Malware Analysis, SEED and NICE labs. Experienced
+                                in encryption, decryption and implementing security protocols.</li>
+                            <li><span>Software Proficiency:</span> Proficient in Microsoft Office Application, Oracle, and
+                                VirtualBox. Experienced in using Windows/MacOS terminals, Git version control, and
+                                Adobe Lightroom.</li>
+                            <li><span>Data Analysis:</span> Skilled in data cleaning, manipulation, pre-processing, and gathering
+                                techniques for effective data analysis. Familiar with Tableau and Power BI for data
+                                visualization.</li>
+                            <li><span>Project Management:</span> Experienced in Agile methodologies and proficient in using
+                                Jira for project management</li>
+                            <li><span>Hardware Profiecieny:</span> Knowledgeable in building PCs and troubleshooting
+                                hardware and software issues.</li>
+                            <li><span>UI/UX Design:</span> Proficient in UI/UX design methodologies, including user research,
+                                wireframing, prototyping, and usability testing to create user-centered interfaces.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span> Developed an Interactive Educational Platform: </span> Played a key role in creating
+                                Trailblazers, an interactive educational visual path racing website. This innovative
+                                project merges visual aesthetics with essential path-finding algorithms, offering
+                                students a captivating and educational platform. Utilized HTML, CSS, JavaScript,
+                                React.js for the front-end, and Java and Spring Boot for the back-end.</li>
+                            <li><span>Engineered a User-Friendly Donation Platform:</span> Created Gift Grub, a web
+                                application that streamlines the donation process, enhancing user experience and
+                                efficiency. Designed the intuitive frontend with HTML and CSS, and developed
+                                backend functionality using Python. Integrated features include charity filtering by
+                                multiple causes, secure payment detail storage, direct donation capabilities, and a
+                                user-driven charity addition request system. Implemented dedicated customer support,
+                                significantly improving user satisfaction.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science (B.S): Computer Science</span> ,May 2024<br>
+                                University of Florida – Gainesville
+                                <br>GPA: 3.27</li>
+                            <li><span>Associate of Arts (AA): Engineering</span> ,December 2020<br>
+                                Hillsborough Community College – Brandon
+                                <br>GPA: 3.89</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+
+</script>
 </body>
 </html>
