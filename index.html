@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b872ef21ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -49,8 +50,6 @@
                         <ul>
                             <li><span>Programming Languages:</span> Proficient in C++, Python, R, SQL, PostgreSQL, PHP,
                                 HTML, CSS, JavaScript, jQuery, Bootstrap, Node.js, and React.js.</li>
-                            <li><span>Cybersecurity:</span> Familiar with Malware Analysis, SEED and NICE labs. Experienced
-                                in encryption, decryption and implementing security protocols.</li>
                             <li><span>Software Proficiency:</span> Proficient in Microsoft Office Application, Oracle, and
                                 VirtualBox. Experienced in using Windows/MacOS terminals, Git version control, and
                                 Adobe Lightroom.</li>
@@ -91,17 +90,43 @@
                                 Hillsborough Community College – Brandon
                                 <br>GPA: 3.89</li>
                         </ul>
-
-
                     </div>
                 </div>
             </div>
         </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="subtitle">Contact Me</h1>
+                <p>eldhosesalby@gmail.com</p>
+                <p>+1 813-708-2450</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/eldhose-salby-96215b187"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/eldhose1998"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
+
 
 <script>
-var tablinks=document.getElementsByClassName("tab-links");
-
+    
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
 </script>
 </body>
 </html>

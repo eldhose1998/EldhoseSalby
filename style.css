@@ -10,10 +10,10 @@ body{
 }
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(images/Picture1.png);
+    height:100vh;
+    background-image: url(images/professional.jpeg);
     background-size:cover;
-    background-position: center;
+    background-position: 270px -300px;
 }   
 .container{
     padding: 10px 10%;
