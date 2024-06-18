@@ -13,12 +13,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -31,7 +33,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/Picture 2.png" alt="graduation">
+                    <img src="images/graduationedited.png" alt="graduation">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -100,15 +102,18 @@
         <div class="row">
             <div class="contact">
                 <h1 class="subtitle">Contact Me</h1>
-                <p>eldhosesalby@gmail.com</p>
-                <p>+1 813-708-2450</p>
+                <p><i class="fa-regular fa-envelope"></i> eldhosesalby@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i></i></i></i> +1 813-708-2450</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/eldhose-salby-96215b187"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/eldhose1998"><i class="fa-brands fa-github"></i></a>
                 </div>
+                <a href="/ELDHOSE SALBY.pdf" download class="btn btn2">Download My Resume</a>
             </div>
         </div>
-
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Eldhose Salby </p>
     </div>
 </div>
 
@@ -127,6 +132,16 @@
         event.currentTarget.classList.add("active-links");
         document.getElementById(tabname).classList.add("active-tab");
     }   
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
 </script>
 </body>
 </html>
